@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" href="build/dist/css/email.screen.css" />
+
+<script src="lib/jquery/jquery.js" type="text/javascript"></script>
+<script src="lib/jquery/jquery.cookie.js" type="text/javascript"></script>
+<script src="build/dist/jquery.<%= details[:project] %>.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<h1 id="banner">Unit Test Results</h1>
+<div id="main"><h3>Session #1</h3>
+
+<div id="<%= details[:project] %>" class="<%= details[:project] %>" />
+
+</div>
+
+<script type="text/javascript">
+	
+	$(function(){
+		$('#<%= details[:project] %>').<%= details[:project] %>();
+	})
+	
+</script>
+
+
+</body>
+
+</html>

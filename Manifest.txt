@@ -1,0 +1,17 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+bin/jqp
+lib/jqp/cli.rb
+lib/jquery_plugin_gen.rb
+lib/jquery_plugin_gen/quick_template.rb
+script/console
+script/destroy
+script/generate
+spec/jqp_cli_spec.rb
+spec/jquery_plugin_gen_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake
