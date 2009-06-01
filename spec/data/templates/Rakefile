@@ -1,0 +1,3 @@
+# -*- ruby -*-
+
+require './lib/tasks/email.rake'

@@ -27,8 +27,8 @@ module JqueryPluginGen
       end
     end
 
-    def self.erb(file, b)
-       QuickTemplate.new(file).exec(b)
+    def self.erb(file, b, path="")
+       QuickTemplate.new(file, path).exec(b)
     end
   end
 
