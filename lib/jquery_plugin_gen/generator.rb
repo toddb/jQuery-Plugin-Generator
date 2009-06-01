@@ -24,10 +24,12 @@ module JqueryPluginGen
       end
 
       Dir.mkdir project
+      puts "creating folder: #{project}"
+      
       Dir.chdir project do
 
         base_dirs.each do |path|
-          # puts "creating: #{path}"
+          puts "creating: #{path}"
           Dir.mkdir path
         end
 
@@ -48,7 +50,7 @@ module JqueryPluginGen
         files["Manifest.txt"] = files.keys.sort.join("\n")
 
         files.each do |file, content|
-          # puts "creating: #{file}"
+          puts "creating: #{file}"
           File.open(file, "w") do |f|
             f.write content
           end

@@ -2,7 +2,7 @@ require "erb"
  
 module JqueryPluginGen
   class QuickTemplate
-    attr_reader :args, :text, :file, :path
+    attr_reader :args, :text, :file
     
     details = {:version => 'xxx'}
     

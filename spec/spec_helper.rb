@@ -17,10 +17,6 @@ def generated_file(file)
   File.read(File.dirname(__FILE__) + '/data/templates/' + file)
 end
 
-def spec_file
-  
-end
-
 def details
   {:version => '0.1.0', :project => 'email'}
 end
