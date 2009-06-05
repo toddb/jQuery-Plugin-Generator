@@ -9,13 +9,11 @@ Generate the structure of jquery plugins easily. Manage library dependencies suc
 
 == FEATURES/PROBLEMS:
 
-* I need to dependency manage javascript plugins (jquery, jquery-ui)
-* Add option to install different versions of libraries
 * be able to use the produced code on linux and windows (need jqp.bat)
 * add acceptance test
 * add hoe-type features for updating plugins to jquery plugin page (as rake tasks)
 * be able to bundle library dependencies
-* be able to switch  between local and remote libraries
+* be able to switch  between local and remote libraries in actual html pages
 * be able to generate new modules and update html pages (as rake task or generator)
 
 == SYNOPSIS:

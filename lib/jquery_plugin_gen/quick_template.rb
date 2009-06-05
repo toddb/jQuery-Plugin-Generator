@@ -7,8 +7,8 @@ module JqueryPluginGen
     details = {:version => 'xxx'}
     
     def initialize(file, path="")
-      @path = path.empty? ? File.dirname(__FILE__) + '/../templates/' : path
-      @file = @path + file + '.erb'
+      @path = path.empty? ? File.join(File.dirname(__FILE__), '..', 'templates') : path
+      @file = File.join(@path, file) + '.erb'
       @text = File.read(@file)
     end
     
