@@ -1,9 +1,21 @@
+== 0.1.3 2009-06-08
+
+* Add rake tasks for build/dist plugins:
+	* Add clean rake task
+	* Replace Makefile
+	* Delegate build tasks to gem rakefiles rather than generate
+	* Add to task folder to generation and then in Rakefile scan that folder for custom tasks
+
+== 0.1.2 2009-06-07
+
+* Be able to download jquery tmbundles into Textmate:
+	* Add rake task for tmbundle loading from gem or from svn latest
+
 == 0.1.1 2009-06-06
 
 * Be able to download jquery files into library:
   * jQuery core, ui and themes with rake
 	* Add option to install different versions of libraries
-	* Add rake task for tmbundle loading from gem or from svn latest
 
 == 0.1.0 2009-05-30
 

@@ -3,7 +3,10 @@ require 'rubygems' unless ENV['NO_RUBYGEMS']
 
 require 'jquery_plugin_gen/tasks'
 
-# create any new tasks here
+# Load your custom tasks from tasks folder
+Dir.glob("tasks/*.rake").each{ |t| import t rescue nil }
+
+# Alternatively, create any new tasks here
 # task :default => [:task, :dependencies] do
 #   yours
 # end

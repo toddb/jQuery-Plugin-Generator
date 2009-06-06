@@ -3,10 +3,8 @@ require 'fileutils'
 module JqueryPluginGen
   class Generator
        
-    X = 'FI' + 'X' 
-
     def self.base_dirs
-      %w(src lib test dist src/images src/css test/data)
+      %w(src lib test dist src/images src/css test/data tasks)
     end
        
     def self.execute(args)
