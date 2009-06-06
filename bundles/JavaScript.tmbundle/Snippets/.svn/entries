@@ -1,0 +1,184 @@
+8
+
+dir
+11598
+http://svn.textmate.org/trunk/Bundles/JavaScript.tmbundle/Snippets
+http://svn.textmate.org
+
+
+
+2007-02-15T04:34:38.291826Z
+6595
+subtlegradient
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Object Method String.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+7ee8ee6239309e2451604c12aad4beeb
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+if.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+f76a7e45c3d1742a41ebd917a802630d
+2006-09-26T15:20:02.741373Z
+5308
+haraldmartin
+
+for (…) {…}.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+d8473ad09408ada7fb9ba67aa186da4e
+2006-07-17T07:55:50.045745Z
+4352
+subtlegradient
+
+Object Value JS.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+1adf3dab4f857e7fa8d0b8e7a48ac9b7
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+Prototype (proto).plist
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+a6a9fe3e452de1ee3e75b7ed18326ff1
+2006-09-26T15:20:02.741373Z
+5308
+haraldmartin
+
+if ___ else.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+655d22eb87933a452275d64a0aab8e4c
+2006-09-26T15:20:02.741373Z
+5308
+haraldmartin
+
+for (…) {…} (faster).tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+8dcbe4029e3bca377bd5fc432ebeeed7
+2007-02-15T04:34:38.291826Z
+6595
+subtlegradient
+
+function.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+ee525d3be5ec4ca9e72d083eb954f2de
+2006-10-29T19:52:42.716981Z
+5720
+cskiadas
+
+Object Method.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+3e2af5a82cb5deb161ead08f9cf6f801
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+function (fun).plist
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+4e1e877c590f6b6baabec8433978d39e
+2006-09-26T15:20:02.741373Z
+5308
+haraldmartin
+
+setTimeout function.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+98cec55a762991999390c3a939776f98
+2006-09-26T15:20:02.741373Z
+5308
+haraldmartin
+
+Object key — key: "value".tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+47eebd2e3442f13d9e5dc452bbc478a1
+2007-02-15T04:34:38.291826Z
+6595
+subtlegradient
+
+Get Elements.tmSnippet
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+af4fd465e2b8441d230487b58d1d0b3b
+2006-10-29T19:52:42.716981Z
+5720
+cskiadas
+

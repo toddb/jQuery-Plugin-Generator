@@ -1,0 +1,112 @@
+8
+
+dir
+11598
+http://svn.textmate.org/trunk/Bundles/JavaScript.tmbundle/Preferences
+http://svn.textmate.org
+
+
+
+2007-03-09T20:03:31.406620Z
+6761
+duff
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Comments.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+1b721088927351d685f1a7bca717ef53
+2007-03-09T20:03:31.406620Z
+6761
+duff
+
+Symbol List Instance.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+9349def56a9b184dbd84715c1bdb5112
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+Symbol List Class.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+65a473da46ccad4fb2128c83b17f483d
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+JavaScript Indent.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+423ea1fa525a9e7582ddd43c88ce0664
+2006-07-17T07:55:50.045745Z
+4352
+subtlegradient
+
+Symbol List Banned.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+97d8705fca5ef90e6731c81dc7c27b76
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+Symbol List Sub 1.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+f8efed75f1a5d9fdd6eb69599599bf9a
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+
+Symbol List Sub 2.tmPreferences
+file
+
+
+
+
+2009-06-06T02:39:25.000000Z
+0d98bc0a398c25728a004212166a8707
+2006-09-26T15:50:54.043333Z
+5310
+haraldmartin
+

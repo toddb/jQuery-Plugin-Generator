@@ -2,7 +2,7 @@ begin
   %w[rake fileutils simple-rss open-uri].each { |f| require f }
 rescue LoadError
   require 'rubygems' unless ENV['NO_RUBYGEMS']
-  %w[rake fileutils simple-rss open-uri].each { |f| require f }
+  %w[rake tmpdir fileutils simple-rss open-uri].each { |f| require f }
 end
 
 lib_dir = 'lib'
@@ -122,15 +122,15 @@ end
 def unzip_and_install(path, file)
   
   path = File.join(File.dirname(__FILE__), path)
-  extracted_folder = File.join(path, file.gsub(/(.*)\.zip/, '\1'))
+  extracted_folder = File.join(Dir.tmpdir, file.gsub(/(.*)\.zip/, '\1'))
 
   if /mswin|mingw/ =~ RUBY_PLATFORM then
     zip = ENV['ZIP'] || '7z'
     puts "Extracting using #{zip} - this should be on your path or set the ZIP=path/to/zip/cmd on rake command"
-    `#{zip} #{file} -o #{path}`
+    `#{zip} #{file} -o #{Dir.tmpdir}`
   else
     puts 'Extracting files'
-    `unzip -o #{path}/#{file} -d #{path}`
+    `unzip -o #{path}/#{file} -d #{Dir.tmpdir}`
   end
    
    puts 'Copying ui and themes'
