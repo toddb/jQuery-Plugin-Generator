@@ -162,15 +162,16 @@ bundles/JavaScript.tmbundle/info.plist
 jQuery-Plugin-Generator.tmproj
 lib/jqp/cli.rb
 lib/jquery_plugin_gen.rb
+lib/jquery_plugin_gen/compiletask.rb
 lib/jquery_plugin_gen/generator.rb
 lib/jquery_plugin_gen/quick_template.rb
 lib/jquery_plugin_gen/support/build.rake
 lib/jquery_plugin_gen/support/bundles.rake
 lib/jquery_plugin_gen/support/jquery.rake
+lib/jquery_plugin_gen/support/package.rake
 lib/jquery_plugin_gen/tasks.rb
 lib/templates/History.txt.erb
 lib/templates/README.txt.erb
-lib/templates/Makefile.erb
 lib/templates/Rakefile.erb
 lib/templates/example.html.erb
 lib/templates/src/plugin.js.erb

@@ -33,7 +33,6 @@ module JqueryPluginGen
 
        details = args
         files = {
-          "Makefile" => QuickTemplate.erb('Makefile', details),
           "History.txt" => QuickTemplate.erb('History.txt', details),
           "README.txt" => QuickTemplate.erb('README.txt', details),
           "src/#{file_name}.js" => QuickTemplate.erb('src/plugin.js', details),

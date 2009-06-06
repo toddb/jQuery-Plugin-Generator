@@ -3,6 +3,9 @@ require 'rubygems' unless ENV['NO_RUBYGEMS']
 
 require 'jquery_plugin_gen/tasks'
 
+PLUGIN  = '<%= details[:project] %>'
+VERSION = '<%= details[:version] %>'
+
 # Load your custom tasks from tasks folder
 Dir.glob("tasks/*.rake").each{ |t| import t rescue nil }
 
