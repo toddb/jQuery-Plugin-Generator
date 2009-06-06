@@ -3,6 +3,7 @@
 * Be able to download jquery files into library:
   * jQuery core, ui and themes with rake
 	* Add option to install different versions of libraries
+	* Add rake task for tmbundle loading from gem or from svn latest
 
 == 0.1.0 2009-05-30
 

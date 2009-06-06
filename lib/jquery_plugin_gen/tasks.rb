@@ -2,5 +2,4 @@
 
 # import the rake tasks for use when having created a plugin
 
-Dir['**/*.rake'].each { |t| load t }
-
+Dir.glob(File.join(File.dirname(__FILE__), '**/*.rake')).each { |r| import r }

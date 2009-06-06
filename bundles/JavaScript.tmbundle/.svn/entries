@@ -1,55 +1,0 @@
-8
-
-dir
-11598
-http://svn.textmate.org/trunk/Bundles/JavaScript.tmbundle
-http://svn.textmate.org
-
-
-
-2008-11-22T07:12:54.500848Z
-10851
-msheets
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-dfb7d73b-c2ec-0310-8fea-fb051d288c6d
-
-Commands
-dir
-
-Preferences
-dir
-
-Snippets
-dir
-
-info.plist
-file
-
-
-
-
-2009-06-06T02:39:26.000000Z
-6b5df332d278b49364e86bab859ef98e
-2007-11-24T10:28:14.611014Z
-8522
-msheets
-
-Support
-dir
-
-Syntaxes
-dir
-
