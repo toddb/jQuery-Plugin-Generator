@@ -8,6 +8,8 @@ lib/jqp/cli.rb
 lib/jquery_plugin_gen.rb
 lib/jquery_plugin_gen/generator.rb
 lib/jquery_plugin_gen/quick_template.rb
+lib/jquery_plugin_gen/support/jquery.rake
+lib/jquery_plugin_gen/tasks.rb
 lib/templates/History.txt.erb
 lib/templates/Makefile.erb
 lib/templates/README.txt.erb
@@ -31,4 +33,3 @@ spec/jquery_plugin_gen_spec.rb
 spec/spec.opts
 spec/spec_helper.rb
 tasks/rspec.rake
-tasks/jquery.rake

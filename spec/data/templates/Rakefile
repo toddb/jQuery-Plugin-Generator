@@ -1,3 +1,9 @@
-# -*- ruby -*-
+# Rakefile for jquery plugin gen        -*- ruby -*-
+require 'rubygems' unless ENV['NO_RUBYGEMS']
 
-require './lib/tasks/email.rake'
+require 'jquery_plugin_gen/tasks'
+
+# create any new tasks here
+# task :default => [:task, :dependencies] do
+#   yours
+# end
