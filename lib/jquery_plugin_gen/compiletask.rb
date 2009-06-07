@@ -100,7 +100,6 @@ module Rake
     def define
       fail "Name required (or :noversion)" if @name.nil?
       @name = nil if :noname == @name
-      
 
       desc "Build all the packages"
       task :compile => :pack do
@@ -120,6 +119,7 @@ module Rake
       
       desc "Merge js files into one"
       task :merge do
+        FileUtils.mkdir(package_dir_path) rescue nil
         `#{sed_command}`
       end
       

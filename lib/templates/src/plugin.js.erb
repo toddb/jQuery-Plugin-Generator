@@ -1,24 +1,27 @@
 ;(function($) {
+  
+  $.<%= details[:project] %> = {
+		VERSION: "<%= details[:version] %>",
+		defaults: {
+			key: 'value'
+		}
+	};
 
-	$.extend($, {
-	  
-	  <%= details[:project] %>: function(options) {
-      
-      VERSION = <%= details[:version] %>
-      self = this
-      
-      defaults = {
-        key: 'value'
-      }
-      
-      $.extend(options, defaults)
-      
+	$.fn.extend({	  
+	  <%= details[:project] %>: function(settings) {   
+      settings = $.extend({}, $.<%= details[:project] %>.defaults, settings);    
       return this.each( function(){
+        self = this;
         
-        // your plugin
+        // NOTE: semicolons are needed more if you are planning on packing your code
+        console.log(this);
+        console.log($(this));
+        console.log($.<%= details[:project] %>.VERSION);
+        console.log($.<%= details[:project] %>.defaults.key);
+         // your plugin
         
       })
-		},
+		}
 	  
 	})
 })(jQuery);

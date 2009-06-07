@@ -10,4 +10,4 @@ CLEAN.include %w( build )
 require 'jquery_plugin_gen/compiletask'
 
 desc "Compile tasks"
-Rake::CompileTask.new(PLUGIN)
+Rake::CompileTask.new(JQUERY_PLUGIN)

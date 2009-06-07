@@ -9,10 +9,10 @@ Generate the structure of jquery plugins easily. Manage library dependencies suc
 
 == FEATURES/PROBLEMS:
 
+* CAN't have a '-' or '.' in the project name [need to split plugin name and filename :-)]
+* refactor jquery.rake task like compiletask as it is pretty ugly and has some spaghetti going on
 * be able to use the produced code on linux and windows (need jqp.bat)
-* bundle up jsspec
 * include qunit
-* add acceptance test
 * add hoe-type features for updating plugins to jquery plugin page (as rake tasks)
 * be able to bundle/package library dependencies
 * be able to switch  between local and remote libraries in actual html pages (perhaps this is the release bundle)
@@ -23,28 +23,89 @@ Generate the structure of jquery plugins easily. Manage library dependencies suc
 
   jqp -p myplugin
 
-This will generate:
+jQuery plugin generator to help you kick start your plugin development with the following structure:
+   
+    plugin
+      /src
+        /css
+        /images
+        query.plugin.js
+      /test
+        spec_plugin.js
+        acceptance_plugin.js
+        specs.html
+        acceptance.html
+      /lib
+       /jsspec
+       jquery.min.js
+       jquery-ui.js
+       /themes
+         /base
+      example.html
+      Rakefile
+      History.txt
+      README.txt
 
- /src
-  jquery.myplugin.js
- /test
-   spec_myplugin.js
-   specs.html
- example.html
- /lib
- Rakefile
- Makefile
+It will generate a base plugin of the structure:
 
-Once you have written your code:
+;(function($) {
+  
+  $.jquery.test = {
+		VERSION: "0.0.1",
+		defaults: {
+			key: 'value'
+		}
+	};
 
-(a) test with jsspec at test/specs.html
-(b) package with make and see the results in /dist
+	$.fn.extend({	  
+	  jquery.test: function(settings) {   
+      settings = $.extend({}, $.jquery.test.defaults, settings);    
+      return this.each( function(){
+        self = this;
+        
+        // NOTE: semicolons are needed more if you are planning on packing your code
+        console.log(this);
+        console.log($(this));
+        console.log($.jquery.test.VERSION);
+        console.log($.jquery.test.defaults.key);
+         // your plugin
+        
+      })
+		}
+	  
+	})
+})(jQuery);
+
+And a base set of jsspec tests all hooked into an html page ready to go:
+
+describe('The tests can load', {
+  
+  'before': function() {  
+   },
+   
+   'after': function(){
+   },
+	
+	'should load': function(){
+    
+	},
+	
+})
+
+Once you have written your code. You have three views of the plugin:
+
+ 1. Acceptance: rake acceptance (compiles and loads tests in browser)
+ 2. Specs: rake specs (loads tests in browser)
+ 3. Example: rake show (compiles and loads the sample page in a browser)
+
+Finally, package your plugin ready for uploading the plugins.jquery.com
+
+  rake package
+
 
 == REQUIREMENTS:
 
-* jquery
-* jspec
-* a packer (currently linux or cygwin)
+* jquery (installed with rake:jquery:add)
 
 == INSTALL:
 

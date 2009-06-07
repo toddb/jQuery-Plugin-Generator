@@ -6,7 +6,7 @@ rescue LoadError
 end
 
 desc "Package"
-Rake::PackageTask.new("#{PLUGIN}", "#{VERSION}") do |p|
+Rake::PackageTask.new(JQUERY_PLUGIN, PLUGIN_VERSION) do |p|
   p.need_tar = true
   p.need_zip = true
   p.package_files.include("build/**/*.*")

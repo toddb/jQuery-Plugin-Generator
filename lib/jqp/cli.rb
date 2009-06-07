@@ -4,13 +4,11 @@ module Jqp
   class CLI
     def self.execute(stdout, arguments=[])
 
-      # NOTE: the option -p/--path= is given as an example, and should be replaced in your application.
-
       options = {
-        :project     => '~jq-plugin',
+        :project     => 'jqplugin',
         :version     => '0.0.1'
       }
-      mandatory_options = %w(  )
+      mandatory_options = %w(project)
 
       parser = OptionParser.new do |opts|
         opts.banner = <<-BANNER.gsub(/^          /,'')
@@ -23,8 +21,16 @@ module Jqp
                query.plugin.js
              /test
                spec_plugin.js
-             /dist
-             Makefile
+               acceptance_plugin.js
+               specs.html
+               acceptance.html
+             /lib
+              /jsspec
+              jquery.min.js
+              jquery-ui.js
+              /themes
+                /base
+             example.html
              Rakefile
              History.txt
              README.txt
@@ -51,7 +57,31 @@ module Jqp
 
       JqueryPluginGen::Generator.execute(options)
       
-      stdout.puts "To update this executable, look in lib/jqp/cli.rb"
+      stdout.puts <<-MSG
+      
+**********************************************************
+
+Now include the jQuery libraries with:
+
+  cd <jq-plugin>
+  rake first_time
+
+First time will:
+ - add jquery core, ui and base themes
+ - compile js to a packed version (see build directory)
+ - load three html files in your browser to demon
+    1. Acceptance tests
+    2. Spec tests
+    3. Example page
+    
+Note: you don't have to add jquery core, ui and themes.
+However, if you don't you will need to update the html 
+pages (example.html, test/spec.html). To see other options
+use rake -T
+
+**********************************************************
+
+MSG
     end
   end
 end
