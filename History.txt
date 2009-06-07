@@ -1,3 +1,7 @@
+== 0.1.4 2009-06-08
+
+* BUG-FIX: plugin name was hardcoded on rake compile
+
 == 0.1.3 2009-06-08
 
 * Add rake tasks for build/dist plugins:
