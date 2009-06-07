@@ -48,7 +48,7 @@ jQuery plugin generator to help you kick start your plugin development with the 
 
 It will generate a base plugin of the structure:
 
-;(function($) {
+ ;(function($) {
   
   $.jquery.test = {
 		VERSION: "0.0.1",
@@ -74,23 +74,32 @@ It will generate a base plugin of the structure:
 		}
 	  
 	})
-})(jQuery);
+ })(jQuery);
 
 And a base set of jsspec tests all hooked into an html page ready to go:
 
-describe('The tests can load', {
+ describe('Basic plugin initialization', {
   
   'before': function() {  
+    $('#jqplugin').jqplugin()
    },
    
    'after': function(){
    },
+
+ 	'should be able see that version of project': function(){
+     value_of($.jqplugin.VERSION).should_be('0.0.1')
+ 	},
 	
-	'should load': function(){
-    
+	'should be able see that element is visible': function(){
+    value_of($('#jqplugin').is(':visible')).should_be_true()
 	},
 	
-})
+	'should be able to override default settings': function(){
+	  // over to you!
+	},
+	
+ })
 
 Once you have written your code. You have three views of the plugin:
 
