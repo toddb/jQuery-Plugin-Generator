@@ -9,7 +9,6 @@ Generate the structure of jquery plugins easily. Manage library dependencies suc
 
 == FEATURES/PROBLEMS:
 
-* remove Makefile in favour of rakefile
 * be able to use the produced code on linux and windows (need jqp.bat)
 * bundle up jsspec
 * include qunit

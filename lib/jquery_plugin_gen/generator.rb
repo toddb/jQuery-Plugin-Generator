@@ -4,7 +4,7 @@ module JqueryPluginGen
   class Generator
        
     def self.base_dirs
-      %w(src lib test dist src/images src/css test/data tasks)
+      %w(src lib test src/images src/css test/data tasks)
     end
        
     def self.execute(args)

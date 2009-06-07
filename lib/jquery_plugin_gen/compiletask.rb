@@ -125,7 +125,6 @@ module Rake
       
       desc "Compress js files to min"
       task :pack => :merge do
-        puts packer_command
         `#{packer_command}`
       end
 
