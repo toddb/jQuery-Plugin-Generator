@@ -170,6 +170,9 @@ lib/jquery_plugin_gen/support/bundles.rake
 lib/jquery_plugin_gen/support/jquery.rake
 lib/jquery_plugin_gen/support/package.rake
 lib/jquery_plugin_gen/tasks.rb
+lib/packer/Pack.pm
+lib/packer/ParseMaster.pm
+lib/packer/jsPacker.pl
 lib/templates/History.txt.erb
 lib/templates/README.txt.erb
 lib/templates/Rakefile.erb

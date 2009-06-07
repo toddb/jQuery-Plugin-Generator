@@ -8,8 +8,6 @@ end
 CLEAN.include %w( build )
 CLOBBER.include %w( dist )
 
-
-
 require 'jquery_plugin_gen/compiletask'
 
 desc "Compile tasks"
