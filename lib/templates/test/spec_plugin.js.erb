@@ -1,13 +1,22 @@
-describe('', {
+describe('Basic plugin initialization', {
   
   'before': function() {  
+    $('#<%= details[:project] %>').<%= details[:project] %>()
    },
    
    'after': function(){
    },
+
+ 	'should be able see that version of project': function(){
+     value_of($.<%= details[:project] %>.VERSION).should_be('<%= details[:version] %>')
+ 	},
 	
-	'should ': function(){
-    
+	'should be able see that element is visible': function(){
+    value_of($('#<%= details[:project] %>').is(':visible')).should_be_true()
+	},
+	
+	'should be able to override default settings': function(){
+	  // over to you!
 	},
 	
 })
