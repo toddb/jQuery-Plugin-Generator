@@ -5,5 +5,5 @@ require 'jquery_plugin_gen/quick_template'
 require 'jquery_plugin_gen/generator'
 
 module JqueryPluginGen
-  VERSION = '0.2.1'
+  VERSION = '0.2.2'
 end

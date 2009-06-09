@@ -126,7 +126,9 @@ def unzip_and_install(dest, tmp_dir, file)
 
   if /mswin|mingw/ =~ RUBY_PLATFORM then
     zip = ENV['ZIP'] || '7z'
+    puts "*********************************"
     puts "Extracting using #{zip} - this should be on your path or set the ZIP=path/to/zip/cmd on rake command using 'x -o #{tmp_dir} #{tmp_dir}/#{file}'"
+    puts "*********************************"
     `#{zip} x -o#{tmp_dir} #{tmp_dir}/#{file}`
   else
     puts "Extracting files #{tmp_dir}/#{file} to #{tmp_dir}"

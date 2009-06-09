@@ -1,3 +1,7 @@
+0.2.2  2009-06-09
+
+* Windows fix for 7z unzipping
+
 0.2.1  2009-06-09
 
 * removed prepackaged textmate bundles because causing problems with Windows - now svn only copies
