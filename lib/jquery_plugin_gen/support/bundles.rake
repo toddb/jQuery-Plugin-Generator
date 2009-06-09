@@ -1,20 +1,9 @@
 namespace :bundles do
   
   BUNDLES = ["JavaScript\ jQuery.tmbundle", "JavaScript.tmbundle"]
-
-  desc 'Install TextMate bundles for jQuery and Jsspec(include in general javascript)'
-  task :tm do
-    require 'tmpdir'
-    require 'fileutils'
-    BUNDLES.each { |bundle|
-      bundle_dir = File.join(File.dirname(__FILE__), "../../../bundles", bundle)
-      FileUtils.cp_r(bundle_dir, Dir.tmpdir)
-      `open "#{File.join(Dir.tmpdir, bundle)}"`
-    }
-  end
-  
+ 
   desc 'Install TextMate bundles from SVN for jQuery and Jsspec(include in general javascript). This requires svn to be installed.'
-  task :tm_svn do
+  task :tm do
     require 'tmpdir'
     require 'fileutils'
     BUNDLES.each { |bundle|
