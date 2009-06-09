@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>README.rdoc</string>
+	<string>lib/jquery_plugin_gen/support/bundles.rake</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -58,12 +58,12 @@
 				<key>column</key>
 				<integer>18</integer>
 				<key>line</key>
-				<integer>43</integer>
+				<integer>35</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>23</integer>
+			<integer>87</integer>
 		</dict>
 		<key>bin/jqp</key>
 		<dict>
@@ -173,6 +173,20 @@
 				<integer>0</integer>
 				<key>line</key>
 				<integer>13</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>lib/jquery_plugin_gen/support/bundles.rake</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -388,6 +402,7 @@
 		<string>lib/templates/README.txt.erb</string>
 		<string>History.txt</string>
 		<string>README.rdoc</string>
+		<string>lib/jquery_plugin_gen/support/bundles.rake</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>

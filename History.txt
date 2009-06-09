@@ -1,3 +1,7 @@
+0.2.1  2009-06-09
+
+* removed prepackaged textmate bundles because causing problems with Windows - now svn only copies
+
 0.2.0  2009-06-08
 
 * rewrite of js plugin structure/code
