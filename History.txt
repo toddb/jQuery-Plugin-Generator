@@ -1,3 +1,7 @@
+0.2.3  2009-06-09
+
+* 0.2.2 seems to be corrupt on rubyforge
+
 0.2.2  2009-06-09
 
 * Windows fix for 7z unzipping
