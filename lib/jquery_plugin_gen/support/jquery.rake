@@ -112,7 +112,9 @@ def get_and_install(uri, path, file)
   new_file = File.join(path, file)
   puts "Saving new library file: #{new_file}"
   
-  File.open(new_file, 'w') do |file|
+  mode = 'b' if /mswin|mingw/ =~ RUBY_PLATFORM
+  
+  File.open(new_file, "w#{mode}") do |file|
     download.open { |jq| jq.each_line {|line| file.puts line} }    
   end unless File.exists?(new_file)
   new_file

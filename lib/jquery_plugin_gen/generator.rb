@@ -25,8 +25,10 @@ module JqueryPluginGen
           file_name = project.gsub(/([A-Z])/, '_\1').downcase.sub(/^_/, '')
           klass = project.capitalize.gsub(/_([a-z])/) {$1.upcase}
       end
-
-      Dir.mkdir project
+      
+      return puts("project: #{project} already exists") if File.directory?(project)
+ 
+      Dir.mkdir(project) 
       puts "creating folder: #{project}"
       
       Dir.chdir project do
