@@ -1,16 +1,18 @@
+open = /mswin|mingw/ =~ RUBY_PLATFORM ? 'start' : 'open'
+
 desc "Run acceptance test in browser"
 task :acceptance => :compile do
-  `open test/acceptance.html`
+  `#{open} test/acceptance.html`
 end
 
 desc "Run spec tests in browser"
 task :specs do
-  `open test/specs.html`
+  `#{open} test/specs.html`
 end
 
 desc "Show example"
-task :example => :merge do
-  `open example.html`
+task :example => :merge do 
+  `#{open} example.html`
 end
 
 desc "Show all browser examples and tests"
