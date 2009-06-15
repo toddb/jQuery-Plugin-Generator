@@ -122,8 +122,6 @@ end
 
 def unzip_and_install(dest, tmp_dir, file)
   
-  puts tmp_dir
-  # dest = File.join(dest)
   extracted_folder = File.join(tmp_dir, file.gsub(/(.*)\.zip/, '\1'))
 
   if /mswin|mingw/ =~ RUBY_PLATFORM then
@@ -148,7 +146,7 @@ def unzip_and_install(dest, tmp_dir, file)
    
    puts 'Cleaning extracted files'
    # FileUtils.rm "#{tmp_dir}/#{file}"  # I'm allowing for caching
-   FileUtils.rm_rf extracted_folder
+   FileUtils.rm_rf patch_themes_path(extracted_folder)
 end
 
 def patch_themes_path(extracted_path)

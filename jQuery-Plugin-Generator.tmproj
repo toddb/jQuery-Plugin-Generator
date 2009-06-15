@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>History.txt</string>
+	<string>lib/jquery_plugin_gen/support/jquery.rake</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,7 +26,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>40</integer>
+				<integer>39</integer>
 				<key>line</key>
 				<integer>2</integer>
 			</dict>
@@ -77,64 +77,6 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>bin/jqp</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>10</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib/jqp/cli.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>36</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>14</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>36</integer>
-			</dict>
-		</dict>
-		<key>lib/jquery_plugin_gen.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>18</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>lib/jquery_plugin_gen/compiletask.rb</key>
 		<dict>
 			<key>caret</key>
@@ -154,14 +96,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>55</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>28</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>29</integer>
+			<integer>0</integer>
 		</dict>
 		<key>lib/jquery_plugin_gen/quick_template.rb</key>
 		<dict>
@@ -191,42 +133,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>lib/jquery_plugin_gen/support/bundles.rake</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>17</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>lib/jquery_plugin_gen/support/jquery.rake</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>49</integer>
 				<key>line</key>
-				<integer>6</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib/jquery_plugin_gen/support/package.rake</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>13</integer>
+				<integer>32</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -238,14 +152,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>56</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>0</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>56</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
 		</dict>
 		<key>lib/templates/History.txt.erb</key>
 		<dict>
@@ -280,102 +210,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>43</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>11</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>lib/templates/src/plugin.js.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>8</integer>
-				<key>line</key>
-				<integer>21</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib/templates/test/acceptance.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>47</integer>
-				<key>line</key>
-				<integer>17</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib/templates/test/spec_plugin.js.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>2</integer>
-				<key>line</key>
-				<integer>21</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>2</integer>
-				<key>line</key>
-				<integer>21</integer>
-			</dict>
-		</dict>
-		<key>lib/templates/test/specs.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>42</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>18</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>42</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -383,17 +225,9 @@
 		<string>lib/jquery_plugin_gen/generator.rb</string>
 		<string>lib/jquery_plugin_gen/support/jquery.rake</string>
 		<string>lib/jquery_plugin_gen/support/test.rake</string>
-		<string>lib/jquery_plugin_gen/support/package.rake</string>
-		<string>lib/jquery_plugin_gen.rb</string>
 		<string>lib/templates/Rakefile.erb</string>
-		<string>lib/jquery_plugin_gen/support/build.rake</string>
-		<string>lib/templates/src/plugin.js.erb</string>
-		<string>lib/templates/test/spec_plugin.js.erb</string>
-		<string>lib/templates/test/specs.html.erb</string>
-		<string>lib/templates/test/acceptance.html.erb</string>
 		<string>lib/templates/example.html.erb</string>
-		<string>bin/jqp</string>
-		<string>lib/jqp/cli.rb</string>
+		<string>lib/jquery_plugin_gen/support/build.rake</string>
 		<string>lib/templates/History.txt.erb</string>
 		<string>lib/jquery_plugin_gen/compiletask.rb</string>
 		<string>lib/jquery_plugin_gen/quick_template.rb</string>
@@ -401,11 +235,10 @@
 		<string>Manifest.txt</string>
 		<string>README.rdoc</string>
 		<string>History.txt</string>
-		<string>lib/jquery_plugin_gen/support/bundles.rake</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{204, 28}, {811, 850}}</string>
+	<string>{{204, 9}, {986, 869}}</string>
 </dict>
 </plist>
