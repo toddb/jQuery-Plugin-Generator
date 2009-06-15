@@ -10,10 +10,7 @@ Generate the structure of jquery plugins easily. Manage library dependencies suc
 == FEATURES/PROBLEMS:
 
 * CAN't have a '-' or '.' in the project name [need to split plugin name and filename :-)]
-* gem dependencies aren't auto installed
-* Can I have a ruby implementation of unzip for windows (rather than 7z?)
 * refactor jquery.rake task like compiletask as it is pretty ugly and has some spaghetti going on
-* be able to use the produced code on linux and windows (need jqp.bat)
 * include qunit
 * add hoe-type features for updating plugins to jquery plugin page (as rake tasks)
 * be able to bundle/package library dependencies

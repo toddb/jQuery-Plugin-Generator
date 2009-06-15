@@ -9,9 +9,9 @@ $hoe = Hoe.new('jqueryplugingen', JqueryPluginGen::VERSION) do |p|
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.rubyforge_name       = 'jqueryplugingen' 
   p.description          = "Generate the structure of jquery plugins easily. Manage library dependencies such as other jquery libraries or packing code on either mac or windows. Get jsspec testing baked in.  Use the familiar rake tasks to manage your jquery code base."
-  # p.extra_deps         = [
-  #   ['activesupport','>= 2.0.2'],
-  # ]
+  p.extra_deps         = [
+    ['simple-rss','>= 1.2'],
+  ]
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"]
   ]
