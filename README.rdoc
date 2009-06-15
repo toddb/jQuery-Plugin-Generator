@@ -1,4 +1,4 @@
-= jquery_plugin_gen
+= jQuery Plugin Generator
 
 * http://github.com/toddb/jqueryplugingenerator
 
@@ -47,7 +47,7 @@ jQuery plugin generator to help you kick start your plugin development with the 
 
 It will generate a base plugin of the structure:
 
- ;(function($) {
+ (function($) {
   
   $.jquery.test = {
 		VERSION: "0.0.1",
@@ -61,12 +61,7 @@ It will generate a base plugin of the structure:
       settings = $.extend({}, $.jquery.test.defaults, settings);    
       return this.each( function(){
         self = this;
-        
-        // NOTE: semicolons are needed more if you are planning on packing your code
-        console.log(this);
-        console.log($(this));
-        console.log($.jquery.test.VERSION);
-        console.log($.jquery.test.defaults.key);
+
          // your plugin
         
       })
@@ -119,7 +114,7 @@ Finally, package your plugin ready for uploading the plugins.jquery.com
 
 == INSTALL:
 
-* sudo gem install jquery_plugin_gen
+* sudo gem install jqueryplugingen
 
 == LICENSE:
 
