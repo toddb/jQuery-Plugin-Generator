@@ -27,7 +27,7 @@ module Rake
   #
   # Example:
   #
-  #   JqueryPluginGen::CompileTask.new('query.plugin') do |p|
+  #   JqueryPluginGen::CompileTask.new('queryplugin') do |p|
   #     p.js_files.include("src/**/*.js")
   #     p.css_files.include("src/css/**/*.css")
   #     p.image_files.include("src/images/**/*.*")
@@ -38,6 +38,7 @@ module Rake
   #     p.package_dir = "build"
   #   end
   #
+  #  Note: Windows users require sed and perl for rake:compile - please install onto PATH
      
   class CompileTask < TaskLib
 
@@ -76,6 +77,7 @@ module Rake
       init(name)
       yield self if block_given?
       define unless name.nil?
+      puts "Windows users require sed and perl for rake:compile - please install onto PATH" if /mswin|mingw/ =~ RUBY_PLATFORM
     end
 
     # Initialization that bypasses the "yield self" and "define" step.

@@ -12,7 +12,8 @@ module Jqp
 
       parser = OptionParser.new do |opts|
         opts.banner = <<-BANNER.gsub(/^          /,'')
-          jQuery plugin generator to help you kick start your plugin development with the following structure:
+          jQuery plugin generator to help you kick start your plugin
+          development with the following structure:
           
            plugin
              /src
@@ -34,7 +35,13 @@ module Jqp
              Rakefile
              History.txt
              README.txt
-
+ 
+ 
+          Dependencies: svn, unzip, sed and perl
+          
+          Note: Windows users require svn, 7zip, sed and perl to 
+                be on PATH to be available for use
+          
           Usage: #{File.basename($0)} [options]
 
           Options are:
@@ -43,7 +50,7 @@ module Jqp
         opts.on("-p", "--project=Name", String,
                 "The project name should be simple eg 'widget'",
                 "And it will be transformed to jquery.widget.js - there is currently no override feature on this naming convention",
-                "Default: ~jq-plugin") { |arg| options[:project] = arg }
+                "Default: jqplugin") { |arg| options[:project] = arg }
         opts.on("-v", "--version=x.x.x", String,
                 "Default: 0.0.1") { |arg| options[:version] = arg }
         opts.on("-h", "--help",
@@ -63,7 +70,7 @@ module Jqp
 
 Now include the jQuery libraries with:
 
-  cd <jq-plugin>
+  cd jqplugin [or your plugin]
   rake first_time
 
 First time will:
@@ -78,6 +85,11 @@ Note: you don't have to add jquery core, ui and themes.
 However, if you don't you will need to update the html 
 pages (example.html, test/spec.html). To see other options
 use rake -T
+
+Dependencies: svn, unzip, sed and perl
+
+Note: Windows users require svn, 7zip, sed and perl to 
+      be on PATH to be available for use
 
 **********************************************************
 

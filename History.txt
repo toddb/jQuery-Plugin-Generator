@@ -1,3 +1,8 @@
+0.2.6  2009-06-20
+
+* gem install causing too many dependencies
+* put warnings in for Windows users requiring sed, perl, svn
+
 0.2.5  2009-06-15
 
 * Windows specific fix on cached files causing a freeze

@@ -5,6 +5,8 @@ rescue LoadError
   %w[rake tmpdir fileutils simple-rss open-uri].each { |f| require f }
 end
 
+# TODO: refactor to task as per compile task
+
 lib_dir = 'lib'
 tmp_dir = Dir.tmpdir
 

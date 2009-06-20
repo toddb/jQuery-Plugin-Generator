@@ -17,10 +17,14 @@ Generate the structure of jquery plugins easily. Manage library dependencies suc
 * be able to switch  between local and remote libraries in actual html pages (perhaps this is the release bundle)
 * be able to generate new modules and update html pages (as rake task or generator)
 * nice to remove option -p for project "jpq myplugin"
+* other packer libraries (especially for windows to avoid perl and sed dependencies)
 
 == SYNOPSIS:
 
   jqp -p myplugin
+
+  cd myplugin
+  rake first_time  (this installs the latest jquery, jquery-ui & themes, builds and shows tests in browser)
 
 jQuery plugin generator to help you kick start your plugin development with the following structure:
    
@@ -74,25 +78,25 @@ And a base set of jsspec tests all hooked into an html page ready to go:
 
  describe('Basic plugin initialization', {
   
-  'before': function() {  
-    $('#jqplugin').jqplugin()
-   },
-   
-   'after': function(){
-   },
+		'before': function() {  
+			$('#jqplugin').jqplugin()
+		},
 
- 	'should be able see that version of project': function(){
-     value_of($.jqplugin.VERSION).should_be('0.0.1')
- 	},
-	
-	'should be able see that element is visible': function(){
-    value_of($('#jqplugin').is(':visible')).should_be_true()
-	},
-	
-	'should be able to override default settings': function(){
-	  // over to you!
-	},
-	
+		'after': function(){
+		},
+
+		'should be able see that version of project': function(){
+			value_of($.jqplugin.VERSION).should_be('0.0.1')
+		},
+
+		'should be able see that element is visible': function(){
+			value_of($('#jqplugin').is(':visible')).should_be_true()
+		},
+
+		'should be able to override default settings': function(){
+			// over to you!
+		},
+
  })
 
 Once you have written your code. You have three views of the plugin:
@@ -108,9 +112,10 @@ Finally, package your plugin ready for uploading the plugins.jquery.com
 
 == REQUIREMENTS:
 
-* jquery (installed with rake:jquery:add)
+* jquery (installed with rake:jquery)
 * WINDOWS: 7zip (7z) on your path
-* gems: rss-simple, open-uri, tmpdir
+* gems: rss-simple
+* svn, sed, perl
 
 == INSTALL:
 

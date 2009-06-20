@@ -12,9 +12,10 @@ $hoe = Hoe.new('jqueryplugingen', JqueryPluginGen::VERSION) do |p|
   p.extra_deps         = [
     ['simple-rss','>= 1.2'],
   ]
-  p.extra_dev_deps = [
-    ['newgem', ">= #{::Newgem::VERSION}"]
-  ]
+
+  # p.extra_dev_deps = [
+  #   ['newgem', ">= #{::Newgem::VERSION}"]
+  # ]
   
   p.clean_globs |= %w[**/.DS_Store tmp *.log]
   path = (p.rubyforge_name == p.name) ? p.rubyforge_name : "\#{p.rubyforge_name}/\#{p.name}"
@@ -26,4 +27,4 @@ require 'newgem/tasks' # load /tasks/*.rake
 Dir['tasks/**/*.rake'].each { |t| load t }
 
 # TODO - want other tests/tasks run by default? Add them to the list
-# task :default => [:spec, :features]
+task :default => [:show]
